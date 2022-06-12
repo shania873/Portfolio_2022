@@ -1,0 +1,75 @@
+// @import 'node_modules/react-keyed-file-browser/dist/react-keyed-file-browser.css';
+
+a{
+  text-decoration: none;
+}
+
+#root{
+  height: 100%;
+}
+
+.row{
+  display: flex;
+}
+
+ul{
+  padding: 0;
+}
+
+.App{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+html,body{
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  color: black;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+  max-width: 100%;
+}
+
+body{
+  background-color: #1b1b1b;
+}
+
+.menu_set{
+  background-color: #0f0f0f;
+  ul{
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      li{
+          // padding: 0.1rem 2rem;
+          a{
+              text-decoration: none;
+              color: white;
+              border: #707070 solid 1px;
+              padding: 1rem 3.5rem;
+              display: inline-block;
+              font-size: 1rem;
+              &:active{
+                border-bottom: 1px solid red;
+              }
+              &:active{
+                border-bottom: 1px solid red;
+              }
+          }
+      }
+  }
+}
+
+.set-layout{
+  // position: absolute;
+  // right: 0;
+  // width: 80%;
+}

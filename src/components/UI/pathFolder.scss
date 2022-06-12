@@ -1,0 +1,23 @@
+.set-pathFolder{
+    background-color: hsl(216, 28%, 7%);
+    color: #4f4f51;
+    padding: 1rem;
+    ul{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        li{
+            padding: 0.1rem 2rem;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            &:after{
+                content: '>';
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}
