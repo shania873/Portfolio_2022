@@ -1,0 +1,24 @@
+.set-layout{
+    color: red;
+    .row{
+        .layout-folder{
+            width: 20%;
+            padding: 2rem 0rem 0 1rem;
+            background-color: #0f0f0f;
+        }
+        .layout-content{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .item-intro{
+                // width: 30%;
+            }
+            .item-development{
+                // width: 70%;
+            }
+        }
+    }
+    
+   
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import TerminalFolder from '../UI/terminalFolder';
+import './project.scss'
 
 export default function Project() {
     return (
@@ -9,7 +10,7 @@ export default function Project() {
                 <TerminalFolder />
             </div>
 
-            <div className='layout-folder'>
+            <div className='layout-content'>
                 <h1>Project</h1>  
             </div>
         </div>           
