@@ -1,26 +1,33 @@
 
 .layout-index{
-    position: relative;
-    /* height: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
-    // margin-top: 3rem;
+    height: 100%;
+    padding-left: 5rem;
     .container-index{    
         display: flex;
         align-items: center;
-        justify-content: center;   
         color: white;
+        width: 90%;
+        justify-content: space-between;
 
         .img-index{
-            max-width: 272px;
-            margin-left: 7rem;
+            // max-width: 272px;
+            // margin-left: 7rem;
+            width: 60%;
+            img{
+                max-width: 377px;
+            }
         }
 
         .infos-index{
+            width: 60%;
+            h1{
+                // max-width: 377px;
+            }
             h3{
-                color: #66a1d5;
+                color: #4d4d4e;
             }
           
         }
@@ -34,10 +41,6 @@
     text-transform: uppercase;
     border: 1px solid #313131;
     padding-left: 1rem;
-}
-
-*{
-    overflow-x: auto!important;
 }
 
 .content-terminal{

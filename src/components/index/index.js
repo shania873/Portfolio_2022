@@ -17,9 +17,9 @@ export default function Index() {
                     </div>
                 </div>         
             </div>    
-            <div className='terminal-index'>
+            {/* <div className='terminal-index'>
                 <TerminalSet />
-            </div> 
+            </div>  */}
         </>
           
     )

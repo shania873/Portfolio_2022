@@ -11,26 +11,16 @@ import Project from"./components/project/project"
 // import TerminalFolder from "./components/UI/terminalFolder";
 import PathFolder from "./components/UI/pathFolder"
 import Footer from "./components/UI/footer"
+import Sidebar from './components/Sidebar';
 
-function App() {
-  // const [active, setActive] = useState('home')
 
-  // const activate = (isActive, path, activeStyle, nonActiveStyle) => {
-  //   if (isActive) {
-  //     setActive(path)
-  //     return activeStyle
-  //   }
-  //   return nonActiveStyle
-  // }
-
-  // console.log(activate(activeNav.isActive, '/'))
-  // console.log(activate(activeNav.isActive, 'about'))
-  // console.log(activate(activeNav.isActive, 'project'))
-
+function App() {  
   return (
     <div className="App">
     <Router>
-    <div className="menu_set">
+ 
+ <Sidebar></Sidebar>
+    {/* <div className="menu_set">
         <ul>
             <li><Link to="/"
                       // style={(activeNav) => activate(activeNav.isActive, '/')}
@@ -42,15 +32,15 @@ function App() {
                       // style={(activeNav) => activate(activeNav.isActive, 'project')}
                       >Project</Link></li>  
         </ul>          
-        <PathFolder/>
-    </div>
+        {/* <PathFolder/> 
+    </div> */}
          
       <Routes>      
           <Route exact path="/" element={<Index />} />
-          <Route exact path="about" element={<About />} />
-          <Route exact path="project" element={<Project />} />
+          <Route exact path="about" element={<About/>} />
+          <Route exact path="skills" element={<Project />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   </div>
   );

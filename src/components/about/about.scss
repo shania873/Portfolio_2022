@@ -1,5 +1,5 @@
 .set-layout{
-    color: red;
+    color: white;
     .row{
         .layout-folder{
             width: 20%;
@@ -7,18 +7,44 @@
             background-color: #0f0f0f;
         }
         .layout-content{
-            width: 80%;
+            width: 90%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            margin: auto;
             align-items: center;
+        
             .item-intro{
-                // width: 30%;
+                width: 80%;
             }
             .item-development{
-                // width: 70%;
+                width: 20%;
+                margin-left: 97px;
             }
         }
     }
     
    
+}
+
+.demo-carousel li{
+    align-items: center;
+}
+
+.slider {
+    // position: relative;
+    // width: 100%;
+    height: 150px!important;
+    // overflow: hidden;
+}
+.slider a.previousButton, .slider a.nextButton {
+   fill:white!important;
+}
+
+svg {
+    fill: rgb(255, 253, 253)!important;
+ 
+}
+
+.nextButton polygon, .previousButton polygon {
+    fill: rgb(255, 253, 253)!important;
 }
