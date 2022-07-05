@@ -4,8 +4,8 @@ import './logo.scss';
 export default function Logo() {
     return (
 
-       <div class="brand">
-            <div class="logo">
+       <div className="brand">
+            <div className="logo">
                 <svg width="200px" height="200px" >
                         <path stroke="#ff004e" stroke-width="0" fill="#ff004e" d="M140.773,59.227C137.316,55.771,130.055,50,100,50
                         s-37.317,5.771-40.774,9.227C55.77,62.684,49.999,69.104,50,100c-0.001,30.896,5.77,37.316,9.227,40.773

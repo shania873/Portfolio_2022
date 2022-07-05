@@ -7,3 +7,15 @@
 //         color: white;
 //     }
 // }
+.set-portfolio{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+
+    .item-portfolio{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+}

@@ -16,6 +16,8 @@
             // max-width: 272px;
             // margin-left: 7rem;
             width: 60%;
+            display: flex;
+            justify-content: center;
             img{
                 max-width: 377px;
             }
@@ -25,6 +27,7 @@
             width: 60%;
             h1{
                 // max-width: 377px;
+                font-size: 3rem;
             }
             h3{
                 color: #4d4d4e;
