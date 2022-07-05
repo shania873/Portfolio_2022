@@ -13,6 +13,8 @@ import PathFolder from "./components/UI/pathFolder"
 import Footer from "./components/UI/footer"
 import Sidebar from './components/Sidebar';
 
+import ItemProject from './components/item-project/item-project';
+
 
 function App() {  
   return (
@@ -39,6 +41,7 @@ function App() {
           <Route exact path="/" element={<Index />} />
           <Route exact path="about" element={<About/>} />
           <Route exact path="skills" element={<Project />} />
+          <Route exact path="skills/:id" element={<ItemProject />} />
       </Routes>
       {/* <Footer /> */}
     </Router>
