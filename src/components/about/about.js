@@ -1,33 +1,54 @@
-import React from 'react';
+import {React, useState} from 'react';
 import Carousel from '../UI/carousel_arrows';
 import logoCSS from '../../assets/img/icon_css.png';
 import logoJavascript from '../../assets/img/icon_javascript.png';
 import logoSASS from '../../assets/img/icon_sass.png';
-
-import timeline from '../../assets/img/timeline.png';
+import CarouselAlice from '../UI/carousel-alice';
 
 import './about.scss';
 
 export default function About(props) {
     // let height = document.querySelectorAll(".set-layout")[0].offsetHeight - (document.querySelectorAll(".menu_set")[0].offsetHeight + document.querySelectorAll(".set-footer")[0].offsetHeight);
     // console.log(height)
-    let about = 
-    [{
-        "id": 0 ,
-        "image": logoCSS,
-        "alt": logoCSS
-    },
-    {
-        "id": 1 ,
-        "image": logoJavascript,
-        "alt": logoJavascript
-    },
-    {
-        "id": 2 ,
-        "image": logoSASS,
-        "alt": logoSASS
-    }]  
+    const itemsSkills = [
+        <div className="item" data-value="1"><img src={logoCSS} alt={logoCSS} /></div>,
+        <div className="item" data-value="2"><img src={logoCSS} alt={logoCSS} /></div>,
+        <div className="item" data-value="3"><img src={logoCSS} alt={logoCSS} /></div>
+    ];
+
+    const itemsHobbies = [
+        <div className="item" data-value="1"><img src={logoSASS} alt={logoSASS} /></div>,
+        <div className="item" data-value="2"><img src={logoSASS} alt={logoSASS} /></div>,
+        <div className="item" data-value="3"><img src={logoSASS} alt={logoSASS} /></div>
+    ];
+
+
+    const [items, setItems] = useState(itemsSkills);
+
+
+    const [isHobbies, setBooleanHobbies] = useState(false);
+    const [isSkills, setBooleanSkills] = useState(true);
+
+
+   
       
+
+    const choiceHobbies = () => {
+        console.log("test")
+        setItems(itemsHobbies)
+        setBooleanHobbies(true)
+        setBooleanSkills(false)
+    }
+
+    const choiceSkills = ()  =>{
+        console.log("test")
+        setItems(itemsSkills)
+        setBooleanSkills(true);
+        setBooleanHobbies(false);
+    }
+
+    console.log(items)
+
     return (
         <div className='set-layout'>
             <div className='row'>
@@ -45,15 +66,16 @@ export default function About(props) {
                             plateformes de formations telles que Dyma et Udemy.
                             Également très sociable et curieuse, j’ai la capacité de m'adapter à
                             tout type d'environnement seule ou en équipe. </p>
-                            <div className='timeline'>
+                          {/* TO DO: make in html and css ? */}
+                            {/* <div className='timeline'>
                                 <img src={timeline} alt='timeline' />
-                            </div>  
+                            </div>   */}
                           
                     </div>
                     <div className='item-development'>
-                        <h4><span className="skills-link">Skills</span> | <span className="hobby-link">Hobbies</span></h4>
+                        <h4><span className="skills-link" onClick={choiceSkills} style={{color: (isSkills === true) ? "#0dca7b" : "white"}}>Skills</span> | <span className="hobby-link" onClick={choiceHobbies}  style={{color: (isHobbies === true) ? "#0dca7b" : "white"}}>Hobbies</span></h4>
                      
-                        <Carousel aboutItems={about}/>
+                        <CarouselAlice items={items}/>
                         {/* <Carousel aboutItems={about}/> */}
                     </div>
                     

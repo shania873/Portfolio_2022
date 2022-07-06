@@ -4,7 +4,12 @@ import logoCSS from '../../assets/img/icon_css.png';
 import logoJavascript from '../../assets/img/icon_javascript.png';
 import logoSASS from '../../assets/img/icon_sass.png';
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import {
+    faArrowLeft,
+    faArrowRight
+} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -34,11 +39,25 @@ export default function Carousel(props) {
       getCarouselProps,
       getCarouselItemProps,
       getButtonProps,
-      getAnnouncerProps
+      getAnnouncerProps,
+      state
     } = usePony({ numItems: items.length });
 
+    // console.log(getCarouselItemProps());
+
+
+    setInterval(() => {
+        // console.log(getCarouselProps);
+// console.log(state.activeSlideIndex + 1 < items.length)
+        if (state.activeSlideIndex + 1 < items.length){
+            document.getElementById("arrow-right").click();
+        }
+        // document.getElementById("arrow-left").click();
+
+      }, "3000")
+
  
-  console.log(getCarouselProps())
+//   console.log(getCarouselProps())
     return (
       <div {...getSectionProps()}>
         <h1 {...getHeadingProps()}>Skills</h1>
@@ -46,15 +65,15 @@ export default function Carousel(props) {
           <ul {...getCarouselProps()}>
             {props.aboutItems.map((item, idx) => (
               <li key={idx} {...getCarouselItemProps(idx)}>
-                <img src={item.image} alt={item.alt} style={{width: "190px"}}/>
+                <img src={item.image} alt={item.alt} style={{width: "190px"}}/> {props.aboutItems.id}
               </li>
             ))}
           </ul>
         </div>
-         <button {...getButtonProps(ActionKind.Previous)}>Previous</button>
-        <button {...getButtonProps(ActionKind.Next)}>Next</button>
+         <button {...getButtonProps(ActionKind.Previous)} id="arrow-left"><FontAwesomeIcon icon={faArrowLeft} color="#0dca7b" /></button>
+        <button {...getButtonProps(ActionKind.Next)} id="arrow-right"><FontAwesomeIcon icon={faArrowRight} color="#0dca7b" /></button>
         <div {...getAnnouncerProps()}>
-          <p>{`${items.length}`}</p>
+        <p>{`Item ${state.activeSlideIndex + 1} of ${items.length}`}</p>
         </div>
       </div>
     );

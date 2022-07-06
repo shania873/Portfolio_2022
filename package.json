@@ -14,6 +14,7 @@
     "moment": "^2.29.3",
     "pony-props": "^0.2.2",
     "react": "^18.1.0",
+    "react-alice-carousel": "^2.6.1",
     "react-animated-term": "^2.0.0",
     "react-dom": "^18.1.0",
     "react-keyed-file-browser": "^1.14.0",
