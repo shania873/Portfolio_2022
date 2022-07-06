@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react-transition-group": "4.4.4",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.0.0",
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
@@ -24,7 +25,8 @@
     "sass": "^1.52.3",
     "swiper": "^8.2.6",
     "terminal-in-react": "^4.3.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-transition-group": "4.4.2"
   },
   "scripts": {
     "start": "react-scripts start",

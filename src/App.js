@@ -1,9 +1,9 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
 import './App.scss';
-
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Index from"./components/index/index" 
 
 import About from"./components/about/about" 
@@ -20,21 +20,25 @@ import ItemProject from './components/item-project/item-project';
 
 
 function App() {  
+  const location = useLocation();
+
   return (
     <div className="App">
-    <Router>
+    
  
  <Sidebar></Sidebar>
  {/* <SidebarMobile></SidebarMobile>   */}
-         
+ <TransitionGroup component={null}>
+      <CSSTransition key={location.key} classNames="fade" timeout={300}>
       <Routes>      
           <Route exact path="/" element={<Index />} />
           <Route exact path="about" element={<About/>} />
           <Route exact path="skills" element={<Project />} />
           <Route exact path="skills/:id" element={<ItemProject />} />
       </Routes>
-      {/* <Footer /> */}
-    </Router>
+      </CSSTransition>
+    </TransitionGroup>
+
   </div>
   );
 }
