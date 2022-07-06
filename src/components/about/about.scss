@@ -1,30 +1,4 @@
-.set-layout{
-    color: white;
-    .row{
-        .layout-folder{
-            width: 20%;
-            padding: 2rem 0rem 0 1rem;
-            background-color: #0f0f0f;
-        }
-        .layout-content{
-            width: 90%;
-            display: flex;
-            justify-content: space-between;
-            margin: auto;
-            align-items: center;
-        
-            .item-intro{
-                width: 65%;
-            }
-            .item-development{
-                width: 250px;
-                margin-left: 97px;
-            }
-        }
-    }
-    
-   
-}
+
 
 .demo-carousel li{
     align-items: center;
@@ -47,4 +21,58 @@ svg {
 
 .nextButton polygon, .previousButton polygon {
     fill: rgb(255, 253, 253)!important;
+}
+
+@media (min-width: 320px) {
+    .set-layout{
+        color: white;
+        // margin: 0;
+        // padding: 0;
+        padding-left: 0;
+        .row{    
+            .layout-content{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 5rem;
+            
+                .item-intro{
+                    width: 90%;
+                }
+                .item-development{
+                    width: 250px;
+                    margin: auto;
+                }
+            }
+        }   
+       
+    }
+}
+
+@media (min-width: 768px) {
+    .set-layout{
+        color: white;
+        padding-left: 5rem;
+        .row{    
+            .layout-content{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                align-items: center;
+                flex-direction: row;
+                .item-intro{
+                    width: 65%;
+                }
+                .item-development{
+                    width: 250px;
+                    margin-left: 97px;
+                }
+            }
+        }   
+       
+    }
 }
