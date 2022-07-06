@@ -22,20 +22,7 @@ function App() {
     <Router>
  
  <Sidebar></Sidebar>
-    {/* <div className="menu_set">
-        <ul>
-            <li><Link to="/"
-                      // style={(activeNav) => activate(activeNav.isActive, '/')}
-                      >Home</Link></li>
-            <li><Link to="about" 
-                      // style={(activeNav) => activate(activeNav.isActive, 'about')}
-                      >About</Link></li>
-            <li><Link to="project" 
-                      // style={(activeNav) => activate(activeNav.isActive, 'project')}
-                      >Project</Link></li>  
-        </ul>          
-        {/* <PathFolder/> 
-    </div> */}
+ {/* <SidebarMobile></SidebarMobile>   */}
          
       <Routes>      
           <Route exact path="/" element={<Index />} />
