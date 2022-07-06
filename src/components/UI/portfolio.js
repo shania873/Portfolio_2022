@@ -60,7 +60,7 @@ export default function Portfolio() {
                     <img src={project.image} alt={project.image} />
                 </div>
 
-                <div>
+              
                     <div className='projet-content'>
                         <p className="project-overline">{project.overline}</p>
                         <h3 className="project-title">
@@ -68,10 +68,9 @@ export default function Portfolio() {
                         </h3>
                         <div className="project-description">
                                 <p dangerouslySetInnerHTML={{__html: project.description}}></p>
-                        </div>                              
-                    </div>        
+                        </div>          
 
-                    <div className='footer-projetContent'>
+                        <div className='footer-projetContent footer-mobile'>
                         <div className='tools-set'>
                         <p dangerouslySetInnerHTML={{__html: project.techList}}></p>
                                
@@ -79,9 +78,20 @@ export default function Portfolio() {
                         </div>
                         <div className='btn-learnMore'><a href={window.location.href + "/" + project.id} >Learn More</a></div>
 
-                    </div>
+                    </div>                    
+                    </div>        
+{/* TO DO: destruct ? */}
+                    {/* <div className='footer-projetContent footer-desktop'>
+                        <div className='tools-set'>
+                        <p dangerouslySetInnerHTML={{__html: project.techList}}></p>
+                               
+                                              
+                        </div>
+                        <div className='btn-learnMore'><a href={window.location.href + "/" + project.id} >Learn More</a></div>
+
+                    </div> */}
                 
-                </div>
+        
 
 
                
