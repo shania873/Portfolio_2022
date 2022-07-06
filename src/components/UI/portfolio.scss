@@ -1,5 +1,9 @@
 .set-portfolio{
     display: flex;
+
+  
+
+    
     .projet-image{
         width: 100%;
         max-width: 40%;
@@ -39,6 +43,28 @@
         border: 1px solid #eee;
         border-radius: 11px;
         cursor: pointer;
+       a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        svg{
+            margin-left: 0.5rem;
+        }
+       }
     }
 
+}
+
+
+@media (min-width: 326px) {
+    .list-link{
+        position: fixed;
+        top: 2rem;
+        background-color: #181818;
+        width: 100%;
+        a{
+            margin-right: 1rem;
+        }
+       
+    }
 }
