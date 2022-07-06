@@ -12,7 +12,7 @@ import Project from"./components/project/project"
 import PathFolder from "./components/UI/pathFolder"
 import Footer from "./components/UI/footer"
 import Sidebar from './components/Sidebar';
-
+import { PageTransition } from '@steveeeie/react-page-transition';
 import ItemProject from './components/item-project/item-project';
 
 
@@ -28,16 +28,22 @@ function App() {
  
  <Sidebar></Sidebar>
  {/* <SidebarMobile></SidebarMobile>   */}
- <TransitionGroup component={null}>
-      <CSSTransition key={location.key} classNames="fade" timeout={300}>
+
+      <PageTransition   
+        transitionKey={location.pathname}
+        preset="carouselToTop"
+        enterOverride="moveToTopFade"
+        exitOverride="scaleUp"
+        // enterAnimation="moveToTopFade"
+      >
       <Routes>      
-          <Route exact path="/" element={<Index />} />
+          <Route exact path="/" element={<Index />}  />
           <Route exact path="about" element={<About/>} />
           <Route exact path="skills" element={<Project />} />
           <Route exact path="skills/:id" element={<ItemProject />} />
       </Routes>
-      </CSSTransition>
-    </TransitionGroup>
+      </PageTransition>
+ 
 
   </div>
   );

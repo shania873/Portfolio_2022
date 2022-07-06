@@ -70,16 +70,19 @@ export default function Portfolio() {
 
     return (
     <div className='set-portfolio'>
-        <div className='list-link'>
-            <h1>Projets</h1>
-        {items.map((project) =>
-            <a href={"#selector-" + project.id}>
-                {project.title}
-            </a>
-        )}
-        </div>
+       
     {items.map((project) =>
-             <div className="item-portfolio" key={project.id} id={"selector-" + project.id}>
+
+    <div className='set-mainPortfolio'>
+      <div className='list-link'>
+        <h1>Projets</h1>
+    {items.map((project) =>
+        <a href={"#selector-" + project.id}>
+            {project.title}
+        </a>
+    )}
+    </div>
+       <div className="item-portfolio" key={project.id} id={"selector-" + project.id}>
 
                 <div className='projet-image'>                 
                     <img src={project.image} alt={project.image} />
@@ -122,6 +125,8 @@ export default function Portfolio() {
                
               
             </div>       
+    </div>
+      
         )}
     </div>     
    
