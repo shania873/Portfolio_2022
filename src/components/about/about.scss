@@ -26,10 +26,8 @@ svg {
 @media (min-width: 320px) {
     .set-layout{
         color: white;
-        // margin: 0;
-        // padding: 0;
         padding-left: 0;
-        .row{    
+  
             .layout-content{
                 width: 90%;
                 display: flex;
@@ -37,8 +35,8 @@ svg {
                 margin: auto;
                 align-items: center;
                 flex-direction: column;
-                margin-top: 12rem;
-            
+                position: absolute;
+                top: 5rem;
                 .item-intro{
                     width: 90%;
                 }
@@ -47,7 +45,7 @@ svg {
                     margin: auto;
                 }
             }
-        }   
+          
        
     }
 }
@@ -56,14 +54,11 @@ svg {
     .set-layout{
         color: white;
         padding-left: 5rem;
-        .row{    
+ 
             .layout-content{
-                width: 90%;
-                display: flex;
-                justify-content: space-between;
-                margin: auto;
-                align-items: center;
+                width: 90%;   
                 flex-direction: row;
+                top: auto;
                 .item-intro{
                     width: 65%;
                 }
@@ -72,7 +67,7 @@ svg {
                     margin-left: 97px;
                 }
             }
-        }   
+   
        
     }
 }

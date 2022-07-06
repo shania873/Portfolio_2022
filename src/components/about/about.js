@@ -51,7 +51,7 @@ export default function About(props) {
 
     return (
         <div className='set-layout'>
-            <div className='row'>
+   
             
 
                 <div className='layout-content'>
@@ -81,7 +81,7 @@ export default function About(props) {
                     
                 </div>
                
-            </div>
+         
                    
         </div>
     )

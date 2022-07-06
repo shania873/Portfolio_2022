@@ -8,7 +8,7 @@ import logoSASS from '../../assets/img/icon_sass.png';
 
 const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
+    568: { items: 1 },
     1024: { items: 1 },
 };
 

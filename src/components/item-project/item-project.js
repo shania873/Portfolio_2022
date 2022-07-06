@@ -1,20 +1,14 @@
 import React from 'react';
-import TerminalFolder from '../UI/terminalFolder';
-// import './project.scss';
-import Portfolio from '../UI/portfolio';
-import {Route, Link, useParams, NavLink} from 'react-router-dom';
+import {useParams, NavLink} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {
     faArrowLeft
 } from '@fortawesome/free-solid-svg-icons';
 import imgProximus from '../../assets/img/img_projet1.JPG';
-// import { Link, NavLink } from 'react-router-dom';
+import './item-project.scss';
+
 export default function ItemProject() {
-
     const params = useParams();
-
-  console.log(params);
   let items = 
         [{
             "id": 0 ,
@@ -60,7 +54,7 @@ export default function ItemProject() {
         <div  className='set-layout'>         
          
 
-            <div className='set-portfolio'>
+            <div className='set-portfolio-details'>
   
                 {items.map((project) =>
                     <>
