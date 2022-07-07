@@ -1,111 +1,154 @@
 // @import 'node_modules/react-keyed-file-browser/dist/react-keyed-file-browser.css';
 
-a{
+a {
   text-decoration: none;
 }
 
-#root{
+#root {
   height: 100%;
 }
 
-.row{
+.row {
   display: flex;
 }
 
-ul{
+ul {
   padding: 0;
 }
 
-.App{
+.App {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.fade-appear,
-.fade-enter {
-opacity: 0;
-z-index: 1;
-}
-.fade-appear-active,
-.fade-enter.fade-enter-active {
-opacity: 1;
-transition: all 1s;
-}
-.fade-exit {
-opacity: 1;
-}
-.fade-exit.fade-exit-active {
-opacity: 0;
-transition: all 1s;
+* {
+  // border: 1px solid red;
 }
 
-html,body{
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+.fade-appear,
+.fade-enter {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+
+.fade-appear {
+  background-color: green;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.fade-appear-active {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* FOR ENTER */
+.fade-enter {
+  background-color: purple;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+html,
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: black;
+  font-weight: 300;
   margin: 0;
   height: 100%;
   box-sizing: border-box;
 }
 
-img{
+img {
   width: 100%;
   max-width: 100%;
 }
 
-body{
+body {
   background-color: #1f2122;
 }
 
-a{
+a {
   text-decoration: none;
-    color: #0dca7b;
+  color: #0dca7b;
 }
 
-.menu_set{
+.menu_set {
   background-color: #1e1f1c;
-  ul{
-      display: flex;
-      list-style: none;
-      text-decoration: none;
-      margin: 0;
-      padding: 0;
-      li{
-          // padding: 0.1rem 2rem;
-          a{
-            text-decoration: none;
-            color: white;
-            background-color: #34352f;
-            padding: 1rem 3.5rem;
-            display: inline-block;
-            font-size: 1rem;
-            border: 1px solid #1e1f1c;
-              &:active{
-                border-bottom: 1px solid red;
-              }
-              &:active{
-                border-bottom: 1px solid red;
-              }
-          }
+
+  ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+
+      // padding: 0.1rem 2rem;
+      a {
+        text-decoration: none;
+        color: white;
+        background-color: #34352f;
+        padding: 1rem 3.5rem;
+        display: inline-block;
+        font-size: 1rem;
+        border: 1px solid #1e1f1c;
+
+        &:active {
+          border-bottom: 1px solid red;
+        }
+
+        &:active {
+          border-bottom: 1px solid red;
+        }
       }
+    }
   }
 }
 
 
-button{
+button {
   background-color: transparent;
-    border: transparent;
+  border: transparent;
 }
 
-.set-layout{
+.set-layout {
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   padding-left: 5rem;
-  .row{
+
+  .row {
     // height: 100%;
   }
 }

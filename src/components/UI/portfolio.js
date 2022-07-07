@@ -70,10 +70,6 @@ export default function Portfolio() {
 
     return (
     <div className='set-portfolio'>
-       
-    {items.map((project) =>
-
-    <div className='set-mainPortfolio'>
       <div className='list-link'>
         <h1>Projets</h1>
     {items.map((project) =>
@@ -81,7 +77,11 @@ export default function Portfolio() {
             {project.title}
         </a>
     )}
-    </div>
+    </div>  
+    {items.map((project) =>
+
+    <div className='set-mainPortfolio'>
+     
        <div className="item-portfolio" key={project.id} id={"selector-" + project.id}>
 
                 <div className='projet-image'>                 

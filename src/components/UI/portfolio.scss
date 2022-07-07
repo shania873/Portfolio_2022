@@ -54,7 +54,11 @@
     }
 
 }
-
+@media (min-width: 768px) {
+    .list-link{
+        background-color: transparent;
+    }
+}
 
 @media (min-width: 326px) {
     .list-link{
