@@ -28,16 +28,16 @@ function App() {
  
  <Sidebar></Sidebar>
  {/* <SidebarMobile></SidebarMobile>   */}
- <TransitionGroup component={null}>
-      <CSSTransition key={location.key} classNames="fade" timeout={300}>
+ {/* <TransitionGroup component={null}>
+      <CSSTransition key={location.key} classNames="fade" timeout={300}> */}
       <Routes>      
           <Route exact path="/" element={<Index />} />
           <Route exact path="about" element={<About/>} />
           <Route exact path="skills" element={<Project />} />
           <Route exact path="skills/:id" element={<ItemProject />} />
       </Routes>
-      </CSSTransition>
-    </TransitionGroup>
+      {/* </CSSTransition>
+    </TransitionGroup> */}
 
   </div>
   );
