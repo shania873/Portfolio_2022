@@ -34,7 +34,7 @@ function App() {
           <Route exact path="/" element={<Index />} />
           <Route exact path="about" element={<About/>} />
           <Route exact path="skills" element={<Project />} />
-          <Route exact path="skills/:id" element={<ItemProject />} />
+          <Route exact path="skills/:project" element={<ItemProject />} />
       </Routes>
       {/* </CSSTransition>
     </TransitionGroup> */}

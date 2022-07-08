@@ -104,7 +104,7 @@ export default function Portfolio() {
                                
                                               
                         </div>
-                        <div className='btn-learnMore'><a href={window.location.origin + "/skills/" + project.id} >Learn More      <FontAwesomeIcon icon={faArrowRight} color="white" /></a></div>
+                        <div className='btn-learnMore'><a href={window.location.origin + "/skills/#project-" + project.id} >Learn More      <FontAwesomeIcon icon={faArrowRight} color="white" /></a></div>
 
                     </div>                    
                     </div>        
