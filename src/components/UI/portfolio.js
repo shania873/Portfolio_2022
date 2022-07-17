@@ -78,54 +78,38 @@ export default function Portfolio() {
         </a>
     )}
     </div>  
-    {items.map((project) =>
+    {items.map((project, idx) =>
 
-    <div className='set-mainPortfolio'>
-     
-       <div className="item-portfolio" key={project.id} id={"selector-" + project.id}>
+            <div className='set-mainPortfolio' key={idx}>
+            
+                    <div className="item-portfolio" id={"selector-" + project.id}>
 
-                <div className='projet-image'>                 
-                    <img src={project.image} alt={project.image} />
-                </div>
+                                <div className='projet-image'>                 
+                                    <img src={project.image} alt={project.image} />
+                                </div>
 
-              
-                    <div className='projet-content'>
-                        <p className="project-overline">{project.overline}</p>
-                        <h3 className="project-title">
-                            {project.title}
-                        </h3>
-                        <div className="project-description">
-                                <p dangerouslySetInnerHTML={{__html: project.description}}></p>
-                        </div>          
+                            
+                                <div className='projet-content'>
+                                    <p className="project-overline">{project.overline}</p>
+                                    <h3 className="project-title">
+                                        {project.title}
+                                    </h3>
+                                    <div className="project-description">
+                                            <p dangerouslySetInnerHTML={{__html: project.description}}></p>
+                                    </div>          
 
-                        <div className='footer-projetContent footer-mobile'>
-                        <div className='tools-set'>
-                        <p dangerouslySetInnerHTML={{__html: project.techList}}></p>
-                               
-                                              
-                        </div>
-                        <div className='btn-learnMore'><a href={window.location.origin + "/skills/#project-" + project.id} >Learn More      <FontAwesomeIcon icon={faArrowRight} color="white" /></a></div>
+                                    <div className='footer-projetContent footer-mobile'>
+                                    <div className='tools-set'>
+                                    <p dangerouslySetInnerHTML={{__html: project.techList}}></p>
+                                        
+                                                        
+                                    </div>
+                                    <div className='btn-learnMore'><a href={window.location.origin + "/skills/" + project.id} >Learn More      <FontAwesomeIcon icon={faArrowRight} color="white" /></a></div>
 
-                    </div>                    
-                    </div>        
-                    {/* TO DO: destruct ? */}
-                    {/* <div className='footer-projetContent footer-desktop'>
-                        <div className='tools-set'>
-                        <p dangerouslySetInnerHTML={{__html: project.techList}}></p>
-                               
-                                              
-                        </div>
-                        <div className='btn-learnMore'><a href={window.location.href + "/" + project.id} >Learn More</a></div>
-
-                    </div> */}
-                
-        
-
-
-               
-              
-            </div>       
-    </div>
+                                    </div>                    
+                                </div>  
+                    </div>       
+            </div>
       
         )}
     </div>     

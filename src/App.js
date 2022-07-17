@@ -1,7 +1,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
 import './App.scss';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Index from"./components/index/index" 
@@ -34,7 +34,9 @@ function App() {
           <Route exact path="/" element={<Index />} />
           <Route exact path="about" element={<About/>} />
           <Route exact path="skills" element={<Project />} />
-          <Route exact path="skills/:project" element={<ItemProject />} />
+          <Route exact path="skills/:id" element={<ItemProject />} />
+
+
       </Routes>
       {/* </CSSTransition>
     </TransitionGroup> */}

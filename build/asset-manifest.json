@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.50d77f38.css",
+    "main.js": "/static/js/main.f2593e91.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/img_projet1.JPG": "/static/media/img_projet1.5c117e4e3e9e3f3846ca.JPG",
+    "static/media/mee_vector.png": "/static/media/mee_vector.3efa86793739dc4c6479.png",
+    "static/media/linkedin-logo.png": "/static/media/linkedin-logo.9edfaf783bbda24faaa3.png",
+    "static/media/icon_sass.png": "/static/media/icon_sass.29e2fd1bc980fa4ebd02.png",
+    "index.html": "/index.html",
+    "main.50d77f38.css.map": "/static/css/main.50d77f38.css.map",
+    "main.f2593e91.js.map": "/static/js/main.f2593e91.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50d77f38.css",
+    "static/js/main.f2593e91.js"
+  ]
+}

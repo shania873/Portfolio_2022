@@ -13,7 +13,6 @@ export default function ItemProject() {
         [{
             "id": 0 ,
             "image": imgProximus,
-            "image_2": imgProximus,
             "alt": imgProximus,
             "title": "Test 0",
             "overline": "Featured Project",
@@ -27,7 +26,6 @@ export default function ItemProject() {
         {
             "id": 1 ,
             "image": imgProximus,
-            "image_2": imgProximus,
             "alt": imgProximus,
             "title": "Test 1",
             "overline": "Featured Project",
@@ -41,7 +39,6 @@ export default function ItemProject() {
         {
             "id": 2 ,
             "image": imgProximus,
-            "image_2": imgProximus,
             "alt": imgProximus,
             "title": "Test 2",
             "overline": "Featured Project",
@@ -75,10 +72,6 @@ export default function ItemProject() {
                                     </div>   
                                     <div className='projet-image'>             
                                             <img src={project.image} alt={project.image} />
-                                            {project.image_2.length > 0 && (
-                                                <img src={project.image_2} alt={project.image} />
-                                            )}
-                                        
                                         </div>                           
                                 </div>                                                                
                         )}    
