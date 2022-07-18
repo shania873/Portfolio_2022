@@ -14,11 +14,14 @@
     .logo {
       display: block;
       padding: 8px 0;
+      left: 0;
+      right: 0;
+      margin: auto auto auto 15px;
   
       img {
         display: block;
         margin: 8px auto;
-        width: 47px;
+        width: 30px;
         height: auto;
   
         &.sub-logo {
@@ -153,11 +156,12 @@
       padding: 8px 0;
       position: absolute;
       top: 0;
+      margin: auto;
   
       img {
         display: block;
         margin: 8px auto;
-        width: 47px;
+        width: 30px;
         height: auto;
   
         &.sub-logo {
@@ -277,4 +281,9 @@
   }
   
 
+}
+
+
+svg{
+  width: 100%;
 }
