@@ -56,7 +56,7 @@ export default function About(props) {
 
                 <div className='layout-content'>
                     <div className='item-intro'>
-                        <h1>About</h1>  
+                        <h1 className="text-3xl tracking-tight font-extrabold text-white-900 sm:text-4xl md:text-6xl">About</h1>  
                         <p>Passionnée en technologie et création graphique depuis des années,
                             j’ai obtenu un bachelier en infographie spécialitée web à la Haute
                             Ecole Francisco Ferrer à Bruxelles.

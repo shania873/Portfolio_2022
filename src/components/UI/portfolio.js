@@ -90,7 +90,7 @@ export default function Portfolio() {
     return (
     <div className='set-portfolio'>
       <div className='list-link'>
-        <h1>Projets</h1>
+        <h1 className="text-3xl tracking-tight font-extrabold text-white-900 sm:text-4xl md:text-6xl">Projets</h1>
             {items.map((project) =>
                        <Link activeClass="active" className="link-portfolio" to={"selector-" + project.id} spy={true} smooth={true} duration={500} >{project.title}</Link>
             )}
