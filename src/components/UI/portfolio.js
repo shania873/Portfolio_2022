@@ -8,7 +8,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import {
     faArrowRight
 } from '@fortawesome/free-solid-svg-icons';
-
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 export default function Portfolio() {
 
     let items = 
@@ -54,6 +54,25 @@ export default function Portfolio() {
 
   
     useEffect(() => {
+
+
+        let section = document.querySelectorAll('[id*="selector-"]');
+        setTimeout(() => {
+            window.addEventListener('scroll', function(e) {
+                // console.log(section)
+                var scrolled = document.scrollingElement.scrollTop;
+                // console.log(scrolled)
+                    section.forEach(sectionItem => {
+                        // console.log(sectionItem.offsetTop)
+                        // console.log(scrolled)
+                        if (sectionItem.offsetTop < scrolled){
+                            console.log(section)
+                            return false
+                        }
+                    });
+                    
+            });
+        }, 500)   
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function (e) {
               e.preventDefault();
@@ -72,17 +91,16 @@ export default function Portfolio() {
     <div className='set-portfolio'>
       <div className='list-link'>
         <h1>Projets</h1>
-    {items.map((project) =>
-        <a href={"#selector-" + project.id}>
-            {project.title}
-        </a>
-    )}
-    </div>  
+            {items.map((project) =>
+                       <Link activeClass="active" className="link-portfolio" to={"selector-" + project.id} spy={true} smooth={true} duration={500} >{project.title}</Link>
+            )}
+    </div>
+
     {items.map((project, idx) =>
 
-            <div className='set-mainPortfolio' key={idx}>
+
             
-                    <div className="item-portfolio" id={"selector-" + project.id}>
+                    <Element className="item-portfolio" name={"selector-" + project.id} >
 
                                 <div className='projet-image'>                 
                                     <img src={project.image} alt={project.image} />
@@ -104,12 +122,16 @@ export default function Portfolio() {
                                         
                                                         
                                     </div>
-                                    <div className='btn-learnMore'><a href={window.location.origin + "/skills/" + project.id} >Learn More      <FontAwesomeIcon icon={faArrowRight} color="white" /></a></div>
-
+                                        <div className='btn-learnMore'>
+                                            <a href={window.location.origin + "/skills/" + project.id} >
+                                                <span>Learn More <FontAwesomeIcon icon={faArrowRight} color="white" /></span>
+                                                {/* <FontAwesomeIcon icon={faArrowRight} color="white" /> */}
+                                            </a>
+                                        </div>
                                     </div>                    
                                 </div>  
-                    </div>       
-            </div>
+                    </Element>       
+         
       
         )}
     </div>     

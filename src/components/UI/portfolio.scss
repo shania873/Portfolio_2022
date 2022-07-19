@@ -66,8 +66,22 @@
         top: 2rem;
         background-color: #181818;
         width: 100%;
+        h1{
+            padding: 1rem;
+        }
+        .link-portfolio{
+            &.active{
+                color: #13c455;
+                background-color: #181818;
+            }
+        } 
         a{
             margin-right: 1rem;
+            padding: 1rem;
+            display: inline-block;
+            border-radius: 15px;
+            color: white;
+            // background-color: red;
         }
        
     }
