@@ -39,6 +39,11 @@
                 }
 
                 .projet-content{
+                    a:hover{
+                        color: #13c455!important;
+                        background-color: #181818;
+                        transition: 0.3s;
+                    }
                     .footer-projetContent{
                         display: block;
                     }

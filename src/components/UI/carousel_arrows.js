@@ -1,8 +1,8 @@
 import React from 'react';
 import { ActionKind, usePony } from "pony-props";
-import logoCSS from '../../assets/img/icon_css.png';
-import logoJavascript from '../../assets/img/icon_javascript.png';
-import logoSASS from '../../assets/img/icon_sass.png';
+import logoCSS from '../../assets/img/img/icons_skills/icon_css.png';
+import logoJavascript from '../../assets/img/img/icons_skills/icon_javascript.png';
+import logoSASS from '../../assets/img/img/icons_skills/icon_sass.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';

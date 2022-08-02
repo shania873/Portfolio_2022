@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import meLogo from '../../assets/img/mee_vector.png';
+import meLogo from '../../assets/img/img/mee_vector.png';
 import TerminalSet from './terminal';
 export default function Index() {
     console.log("index")

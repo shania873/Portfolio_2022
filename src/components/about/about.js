@@ -1,8 +1,8 @@
 import {React, useState} from 'react';
 import Carousel from '../UI/carousel_arrows';
-import logoCSS from '../../assets/img/icon_css.png';
-import logoJavascript from '../../assets/img/icon_javascript.png';
-import logoSASS from '../../assets/img/icon_sass.png';
+import logoCSS from '../../assets/img/img/icons_skills/icon_css.png';
+import logoJavascript from '../../assets/img/img/icons_skills/icon_css.png';
+import logoSASS from '../../assets/img/img/icons_skills/icon_css.png';
 import CarouselAlice from '../UI/carousel-alice';
 
 import './about.scss';

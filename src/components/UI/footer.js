@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.scss';
-import logoLinkedin from "../../assets/img/linkedin-logo.png"
+import logoLinkedin from "../../assets/img/img/linkedin-logo.png"
 
 export default function Footer() {
     return (

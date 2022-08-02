@@ -3,10 +3,25 @@
     margin-top: 0rem;
     position: absolute;
     top: 7rem;
+    .project-overline{
+        margin-top: 1rem;
+    }
+    h1{
+        margin: 1rem 0 2rem 0;
+    }
+
+    p{
+        margin-bottom: 2rem;
+    }
     .projet-image{
         img{
         }
     
+    }
+    .btn-back:hover{
+        color: #13c455!important;
+        background-color: #181818;
+        transition: 0.3s;
     }
 }
 

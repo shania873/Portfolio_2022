@@ -71,3 +71,15 @@ svg {
        
     }
 }
+
+.item-development{
+    span{
+        cursor: pointer;
+    }
+    
+    span:hover{
+        color: #13c455!important;
+        background-color: #181818;
+        transition: 0.3s;
+    }
+}

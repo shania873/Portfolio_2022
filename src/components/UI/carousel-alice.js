@@ -1,9 +1,9 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import logoCSS from '../../assets/img/icon_css.png';
-import logoJavascript from '../../assets/img/icon_javascript.png';
-import logoSASS from '../../assets/img/icon_sass.png';
+// import logoCSS from '../../assets/img/icon_css.png';
+// import logoJavascript from '../../assets/img/icon_javascript.png';
+// import logoSASS from '../../assets/img/icon_sass.png';
 
 
 const responsive = {

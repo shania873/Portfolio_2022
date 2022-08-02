@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faArrowLeft
 } from '@fortawesome/free-solid-svg-icons';
-import imgProximus from '../../assets/img/img_projet1.JPG';
+import imgProximus from '../../assets/img/img/img_projet1.JPG';
 import './item-project.scss';
 
 export default function ItemProject() {
@@ -60,13 +60,13 @@ export default function ItemProject() {
                     <>
                         {params && project && project.id.toString() === params.id && (
                                 <div className='projet-content'>
-                                              <NavLink exact="true" activeclassname="active" to="/">
+                                              <NavLink exact="true" className="btn-back" to="/">
                                                     <FontAwesomeIcon icon={faArrowLeft} color="#0dca7b" /> <span>Retour</span>
                                                 </NavLink>
                                     <p className="project-overline">{project.overline}</p>
-                                    <h3 className="project-title">
+                                    <h1 className="text-1xl tracking-tight font-extrabold text-white-900 sm:text-4xl md:text-4xl">
                                         {project.title}
-                                    </h3>
+                                    </h1>
                                     <div className="project-description">
                                             <p dangerouslySetInnerHTML={{__html: project.description}}></p>
                                     </div>   
