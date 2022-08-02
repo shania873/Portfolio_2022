@@ -1,14 +1,27 @@
 .set-portfolio{
     display: flex;
-
+    width: 100%;
+    .list-link{
+        width: 100%;
+    }
   
 
-    
-    .projet-image{
-        width: 100%;
-        max-width: 40%;
-        margin-right: 6rem;
+    .gallery{
+        display: flex;
+        // justify-content: center;
+        align-items: flex-start;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 90%;
+        .projet-image{
+            // width: 100%;
+            // padding: 1rem;
+            width: 350px;
+            // max-width: 30%;
+            // margin-right: 6rem;
+        }
     }
+    
 
     .projet-content{
         background-color: #181818;
