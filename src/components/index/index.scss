@@ -30,7 +30,7 @@
                 // font-size: 3rem;
             }
             h3{
-                color: #4d4d4e;
+                color: #8f8f8f;
             }
           
         }
@@ -85,3 +85,42 @@
         }
     }
 }
+
+h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 200px;
+    overflow: hidden;
+  
+    line-height: 1;
+  }
+  h1 span {
+    display: block;
+    opacity: 1;
+    animation: reveal 0.7s, cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  }
+
+
+  h3 {
+    margin: 0;
+    text-align: left;
+    // font-size: 200px;
+    overflow: hidden;
+    line-height: 1;
+
+  }
+  h3 span {
+    display: block;
+    opacity: 1;
+    animation: reveal 0.9s, cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  }
+  
+  
+  @keyframes reveal {
+    0% {
+      transform: translate(0,100%);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }

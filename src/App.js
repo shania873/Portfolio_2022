@@ -18,7 +18,14 @@ import ItemProject from './components/item-project/item-project';
 
 // import { play, exit } from './timelines'
 
-
+// let btn = document.getElementById('root');
+// btn.addEventListener('mousemove', e => {
+//   let rect = e.target.getBoundingClientRect();
+//   let x = e.clientX - rect.left;
+//   let y = e.clientY - rect.top;
+//   btn.style.setProperty('--x', x + 'px');
+//   btn.style.setProperty('--y', y + 'px');
+// });
 
 function App() {  
   const location = useLocation();

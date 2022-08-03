@@ -161,3 +161,33 @@ button {
   }
 }
 
+// #root {
+//   // position: relative;
+//   background: linear-gradient(45deg, #332e32, #2d2323);
+//   // padding: 1.5rem 3rem;
+//   // font-size: 3rem;
+//   border: none;
+//   border-radius: 25px;
+//   color: white;
+//   cursor: pointer;
+//   outline: none;
+//   overflow: hidden;
+// }
+// .mouse-tracking span {
+//   position: relative;
+// }
+// #root:before {
+//   --size: 0;
+//   content: '';
+//   position: absolute;
+//   left: var(--x);
+//   top: var(--y);
+//   width: var(--size);
+//   height: var(--size);
+//   background: radial-gradient(circle closest-side, rgb(66, 57, 57), transparent);
+//   transform: translate(-50%, -50%);
+//   transition: width 0.2s ease, height 0.2s ease;
+// }
+// #root:hover:before {
+//   --size: 200px;
+// }
